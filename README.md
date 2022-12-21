@@ -1,6 +1,7 @@
 # MyNewBlog
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+And built with this [figma template](https://www.figma.com/file/k9wujFK5Pios52Vga4tNvo/%F0%9F%8C%8E-Free-Blog-Template-Design-(Community)?node-id=118%3A1909&t=8seUvX0K5wTm0r15-0)
 
 ## Development server
 
