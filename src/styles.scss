@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/styles/variables";
+@import "src/styles/maps";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.h1 {
+  @include headings(h1)
+}
+
+.h2 {
+  @include headings(h2)
+}
+
+.h3 {
+  @include headings(h3)
+}
+
+.p1 {
+  @include headings(p1)
+}
+
+.p2 {
+  @include headings(p2)
+}
+
+.p3 {
+  @include headings(p3)
+}
+
+.p4 {
+  @include headings(p4)
+}
+
+.logo-h1 {
+  @include headings(logo-h1)
+}
+
+.logo-h2 {
+  @include headings(logo-h2)
+}
+
+.button-text {
+  @include headings(button-text)
+}
