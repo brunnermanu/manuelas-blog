@@ -4,21 +4,19 @@
 .button {
   border: none;
   background-color: $blue;
-  min-width: 60px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   outline: none;
   transition: 0.2s ease-in-out;
   text-align: center;
-  @include headings(button-text)
-}
+  @include headings(button-text);
 
-.button:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    background-color: $light_blue;
+  }
 }
-
-;

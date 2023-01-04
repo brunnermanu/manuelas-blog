@@ -8,7 +8,4 @@ import { Component, Input } from "@angular/core";
 export class ButtonComponent {
   @Input() buttonName: string | undefined;
   @Input() iconPath: string | undefined;
-
-  constructor() {
-  }
 }
