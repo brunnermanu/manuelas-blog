@@ -9,29 +9,29 @@
   align-items: center;
   background-color: $extra-light;
 
-  .logo {
+  &__logo {
     margin-left: 95px;
     display: flex;
     align-items: baseline;
     text-decoration: none;
 
-    &__logo-h1 {
+    &--logo-h1 {
       @include headings(logo-h1);
     }
 
-    &__logo-h2 {
+    &--logo-h2 {
       @include headings(logo-h2);
     }
   }
 
-  .links {
+  &__links {
     margin-right: 95px;
     display: flex;
     gap: 20px;
     align-items: center;
     text-decoration: none;
 
-    &__link-h3 {
+    &--link-h3 {
       @include headings(h3);
       text-decoration: none;
       transition: 0.2s ease-in-out;
@@ -41,7 +41,7 @@
       }
     }
 
-    &__active {
+    &--active {
       color: $blue;
     }
   }
