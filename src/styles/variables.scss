@@ -7,11 +7,8 @@ $light-grey: #E4E5E9;
 $extra-light: #EFF0F3;
 $white: #FFFFFE;
 $blue: #6246EA;
-$border-dark: rgba($dark, 0.88);
-
-.alert {
-  border: 1px solid $border-dark;
-}
+$light_blue: rgba($blue, 0.88);
+$light-dark: rgba($dark, 0.88);
 
 $heading-map: (
   h1: (
