@@ -1,5 +1,6 @@
 @import "src/styles/variables";
 @import "src/styles/maps";
+@import "src/styles/mixins";
 
 .button {
   border: none;
@@ -18,5 +19,15 @@
   &:hover {
     cursor: pointer;
     background-color: $light_blue;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  @include mobile {
+    &__name {
+      display: none;
+    }
   }
 }

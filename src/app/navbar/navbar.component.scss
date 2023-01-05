@@ -1,5 +1,6 @@
 @import "src/styles/variables";
 @import "src/styles/maps";
+@import "src/styles/mixins";
 
 .navbar {
   width: 100%;
@@ -44,6 +45,50 @@
     &--active {
       color: $blue;
     }
+  }
+
+  @include mobile {
+    &__logo {
+      margin-left: 15px;
+
+      &--logo-h1 {
+        @include headings(logo-h1);
+        font-size: 20px;
+      }
+
+      &--logo-h2 {
+        @include headings(logo-h2);
+        font-size: 12px;
+      }
+    }
+
+    &__links {
+      margin-right: 15px;
+    }
+  }
+
+  @include tablet {
+    &__logo {
+      margin-left: 30px;
+
+      &--logo-h1 {
+        @include headings(logo-h1);
+        font-size: 28px;
+      }
+
+      &--logo-h2 {
+        @include headings(logo-h2);
+        font-size: 16px;
+      }
+    }
+
+    &__links {
+      margin-right: 30px;
+    }
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 }
 
