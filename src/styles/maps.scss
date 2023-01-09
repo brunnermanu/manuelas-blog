@@ -10,3 +10,13 @@
     #{$key}: #{$value}
   }
 }
+
+@function get-page-styles($keys...) {
+  @return map-get($page-map, $keys...);
+}
+
+@mixin page-styles($keys...) {
+  @each $key, $value in get-page-styles($keys...) {
+    #{$key}: #{$value}
+  }
+}

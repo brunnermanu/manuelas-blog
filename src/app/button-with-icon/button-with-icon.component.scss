@@ -16,12 +16,20 @@
 	text-align: center;
 	@include headings(button-text);
 
-	&__name {
-		margin: 0;
-	}
-
 	&:hover {
 		cursor: pointer;
 		background-color: $light_blue;
 	}
+
+	@include mobile {
+		&__name {
+			display: none;
+		}
+	}
+
+	&__name {
+		margin: 0;
+	}
 }
+
+

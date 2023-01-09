@@ -1,0 +1,79 @@
+@import "src/styles/variables";
+@import "src/styles/maps";
+@import "src/styles/mixins";
+
+.intro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include page-styles(standard-spaces);
+	height: calc(100vh - 80px);
+	background-color: $extra-light;
+
+	&__content {
+	}
+
+	&__title {
+		@include headings(h1)
+	}
+
+	&__subtitle {
+		@include headings(p1);
+		border-left: 3px solid $dark;
+		padding-left: 6px;
+		margin: 30px 0;
+	}
+
+	&__email-input {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 10px;
+	}
+
+	&__image {
+		width: 35%;
+	}
+}
+
+@include mobile {
+	.intro {
+		height: auto;
+		@include page-styles(mobile-spaces);
+
+		&__title {
+			@include headings(h1-mobile)
+		}
+
+		&__image {
+			display: none;
+		}
+	}
+}
+
+@include tablet {
+	.intro {
+		flex-flow: column;
+		align-items: center;
+		height: auto;
+		gap: 50px 0;
+		@include page-styles(tablet-spaces);
+
+		&__image {
+			width: 50%;
+		}
+	}
+}
+
+.input-field {
+	border: none;
+	background-color: $white;
+	border-radius: 4px;
+	padding: 10px 15px;
+	min-width: 250px;
+	@include headings(p2);
+}
+
+::placeholder {
+	@include headings(p2);
+	color: $gray
+}

@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ButtonComponent } from './button/button.component';
+import { ButtonWithIconComponent } from './button-with-icon/button-with-icon.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { ArticlesComponent } from './articles/articles.component';
     NavbarComponent,
     HomeComponent,
     AboutMeComponent,
-    ButtonComponent,
-    ArticlesComponent
+    ButtonWithIconComponent,
+    ArticlesComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -25,4 +27,5 @@ import { ArticlesComponent } from './articles/articles.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
