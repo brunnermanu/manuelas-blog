@@ -73,6 +73,30 @@ $heading-map: (
 		color: $blue,
 		font-weight: 700,
 	),
+	logo-h1-mobile: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 20px,
+		color: $dark,
+		font-weight: 600,
+	),
+	logo-h2-mobile: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 12px,
+		color: $blue,
+		font-weight: 700,
+	),
+	logo-h1-tablet: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 28px,
+		color: $dark,
+		font-weight: 600,
+	),
+	logo-h2-tablet: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 16px,
+		color: $blue,
+		font-weight: 700,
+	),
 	button-text: (
 		font-family: 'Plus Jakarta Sans',
 		font-size: 18px,
@@ -91,4 +115,15 @@ $page-map: (
 	mobile-spaces: (
 		padding: $layout-spacing-small,
 	),
+	standard-button: (
+		border: none,
+		background-color: $blue,
+		border-radius: 4px,
+		padding: 10px 15px,
+		transition: 0.2s ease-in-out,
+	),
+	standard-button-hover: (
+		cursor: pointer,
+		background-color: $light_blue,
+	)
 )

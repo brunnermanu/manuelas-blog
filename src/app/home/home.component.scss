@@ -10,9 +10,6 @@
 	height: calc(100vh - 80px);
 	background-color: $extra-light;
 
-	&__content {
-	}
-
 	&__title {
 		@include headings(h1)
 	}
@@ -26,7 +23,6 @@
 
 	&__email-input {
 		display: flex;
-		flex-wrap: nowrap;
 		gap: 10px;
 	}
 
@@ -71,9 +67,10 @@
 	padding: 10px 15px;
 	min-width: 250px;
 	@include headings(p2);
+
+	&::placeholder {
+		color: $gray
+	}
 }
 
-::placeholder {
-	@include headings(p2);
-	color: $gray
-}
+

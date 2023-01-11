@@ -3,22 +3,14 @@
 @import "src/styles/mixins";
 
 .button {
-	border: none;
-	background-color: $blue;
 	display: flex;
-	flex-wrap: nowrap;
 	align-items: center;
 	gap: 10px;
-	border-radius: 4px;
-	padding: 10px 15px;
-	outline: none;
-	transition: 0.2s ease-in-out;
-	text-align: center;
+	@include page-styles(standard-button);
 	@include headings(button-text);
 
 	&:hover {
-		cursor: pointer;
-		background-color: $light_blue;
+		@include page-styles(standard-button-hover)
 	}
 
 	@include mobile {
