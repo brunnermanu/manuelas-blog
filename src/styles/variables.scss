@@ -1,74 +1,129 @@
 @use "sass:map";
 
 $dark: #2B2C34;
-$dark-grey: #9A9494;
-$grey: #C0C0C0;
-$light-grey: #E4E5E9;
+$dark-gray: #9A9494;
+$gray: #C0C0C0;
+$light-gray: #E4E5E9;
 $extra-light: #EFF0F3;
 $white: #FFFFFE;
 $blue: #6246EA;
 $light_blue: rgba($blue, 0.88);
 $light-dark: rgba($dark, 0.88);
-
+$layout-spacing-small: 20px;
+$layout-spacing-medium: 40px;
+$layout-spacing-large: 95px;
 $heading-map: (
-  h1: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 64px,
-    color: $dark,
-    font-weight: 700,
-  ),
-  h2: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 24px,
-    color: $dark,
-    font-weight: 700,
-  ),
-  h3: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 20px,
-    color: $dark,
-    font-weight: 700,
-  ),
-  p1: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 20px,
-    color: $dark-grey,
-    font-weight: 400,
-  ),
-  p2: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 18px,
-    color: $dark,
-    font-weight: 400,
-  ),
-  p3: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 16px,
-    color: $dark,
-    font-weight: 600,
-  ),
-  p4: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 14px,
-    color: $dark,
-    font-weight: 400,
-  ),
-  logo-h1: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 36px,
-    color: $dark,
-    font-weight: 600,
-  ),
-  logo-h2: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 18px,
-    color: $blue,
-    font-weight: 700,
-  ),
-  button-text: (
-    font-family: 'Plus Jakarta Sans',
-    font-size: 18px,
-    color: $white,
-    font-weight: 700,
-  )
+	h1: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 64px,
+		color: $dark,
+		font-weight: 700,
+	),
+	h1-mobile: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 44px,
+		color: $dark,
+		font-weight: 700,
+	),
+	h2: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 24px,
+		color: $dark,
+		font-weight: 700,
+	),
+	h3: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 20px,
+		color: $dark,
+		font-weight: 700,
+	),
+	p1: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 20px,
+		color: $dark-gray,
+		font-weight: 400,
+	),
+	p2: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 18px,
+		color: $dark,
+		font-weight: 400,
+	),
+	p3: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 16px,
+		color: $dark,
+		font-weight: 600,
+	),
+	p4: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 14px,
+		color: $dark,
+		font-weight: 400,
+	),
+	logo-h1: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 36px,
+		color: $dark,
+		font-weight: 600,
+	),
+	logo-h2: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 18px,
+		color: $blue,
+		font-weight: 700,
+	),
+	logo-h1-mobile: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 20px,
+		color: $dark,
+		font-weight: 600,
+	),
+	logo-h2-mobile: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 12px,
+		color: $blue,
+		font-weight: 700,
+	),
+	logo-h1-tablet: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 28px,
+		color: $dark,
+		font-weight: 600,
+	),
+	logo-h2-tablet: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 16px,
+		color: $blue,
+		font-weight: 700,
+	),
+	button-text: (
+		font-family: 'Plus Jakarta Sans',
+		font-size: 18px,
+		color: $white,
+		font-weight: 700,
+	)
 );
+$page-map: (
+	standard-spaces: (
+		padding-left: $layout-spacing-large,
+		padding-right: $layout-spacing-large,
+	),
+	tablet-spaces: (
+		padding: $layout-spacing-medium,
+	),
+	mobile-spaces: (
+		padding: $layout-spacing-small,
+	),
+	standard-button: (
+		border: none,
+		background-color: $blue,
+		border-radius: 4px,
+		padding: 10px 15px,
+		transition: 0.2s ease-in-out,
+	),
+	standard-button-hover: (
+		cursor: pointer,
+		background-color: $light_blue,
+	)
+)

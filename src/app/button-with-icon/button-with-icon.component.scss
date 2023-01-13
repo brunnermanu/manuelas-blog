@@ -3,14 +3,25 @@
 @import "src/styles/mixins";
 
 .button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 	@include page-styles(standard-button);
 	@include headings(button-text);
-
-	&__name {
-		margin: 0;
-	}
 
 	&:hover {
 		@include page-styles(standard-button-hover)
 	}
+
+	@include mobile {
+		&__name {
+			display: none;
+		}
+	}
+
+	&__name {
+		margin: 0;
+	}
 }
+
+
