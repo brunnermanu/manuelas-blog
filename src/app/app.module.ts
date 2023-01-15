@@ -9,6 +9,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ButtonWithIconComponent } from './button-with-icon/button-with-icon.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ButtonComponent } from './button/button.component';
+import { ArticlePreViewComponent } from './article-pre-view/article-pre-view.component';
+import { ArticlesService } from "./services/articles.service";
 
 @NgModule({
   declarations: [
@@ -18,13 +20,14 @@ import { ButtonComponent } from './button/button.component';
     AboutMeComponent,
     ButtonWithIconComponent,
     ArticlesComponent,
-    ButtonComponent
+    ButtonComponent,
+    ArticlePreViewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ArticlesService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

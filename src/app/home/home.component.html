@@ -18,4 +18,8 @@
 
     <img class="intro__image" src="assets/icons/coding-illustration.svg">
   </div>
+  <div class="articles">
+    <app-article-pre-view *ngFor="let article of articles"
+                          [article]="article"></app-article-pre-view>
+  </div>
 </div>
