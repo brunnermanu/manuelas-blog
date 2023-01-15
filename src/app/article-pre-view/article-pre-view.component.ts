@@ -1,16 +1,5 @@
 import { Component, Input } from '@angular/core';
-
-
-interface Article {
-  id: number;
-  title: string;
-  titleImage: string;
-  content: string;
-  createdAt: string;
-  authorName: string;
-  authorImage: string;
-  timeToRead: string;
-}
+import { Article } from "../Interfaces/articleInterface";
 
 @Component({
   selector: 'app-article-pre-view',
@@ -21,5 +10,6 @@ interface Article {
 
 export class ArticlePreViewComponent {
   @Input() article: Article;
+  @Input() index: number;
 
 }

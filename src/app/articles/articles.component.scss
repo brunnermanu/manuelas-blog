@@ -1,0 +1,13 @@
+@import "src/styles/variables";
+@import "src/styles/maps";
+@import "src/styles/mixins";
+
+.articles {
+	padding-top: $layout-spacing-medium;
+	padding-bottom: $layout-spacing-medium;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	gap: 20px;
+	@include page-styles(standard-spaces)
+}

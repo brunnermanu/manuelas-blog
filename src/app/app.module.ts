@@ -11,6 +11,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { ButtonComponent } from './button/button.component';
 import { ArticlePreViewComponent } from './article-pre-view/article-pre-view.component';
 import { ArticlesService } from "./services/articles.service";
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ArticlesService } from "./services/articles.service";
     ArticlesComponent,
     ButtonComponent,
     ArticlePreViewComponent,
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,
