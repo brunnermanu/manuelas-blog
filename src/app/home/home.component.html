@@ -18,10 +18,5 @@
 
     <img class="intro__image" src="assets/icons/coding-illustration.svg">
   </div>
-  <div class="articles">
-    <app-article-pre-view *ngFor="let article of articles; let i = index"
-                          [article]="article"
-                          [index]="i"
-                          (click)="onArticleClick(article.id)"></app-article-pre-view>
-  </div>
+  <app-articles [showLatest]="true"></app-articles>
 </div>
