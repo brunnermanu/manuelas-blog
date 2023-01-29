@@ -23,7 +23,4 @@
 	@include tablet {
 		@include page-styles(tablet-spaces);
 	}
-	@include mobile {
-		@include page-styles(tablet-spaces);
-	}
 }
