@@ -10,7 +10,8 @@ import { Router } from "@angular/router";
 })
 export class ArticlesComponent implements OnInit {
   @Input() showLatest: boolean;
-  articles: Article[]
+  @Input() title: string;
+  articles: Article[];
 
   constructor(private articlesService: ArticlesService, private router: Router) {
   }
