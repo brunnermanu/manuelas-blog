@@ -50,4 +50,8 @@ export class ArticlesService {
   getArticles$(start: number): Observable<Article[]> {
     return of(this.articles.slice(start));
   }
+
+  getArticle(id: number) {
+    return this.articles.find(article => article.id === id);
+  }
 }
