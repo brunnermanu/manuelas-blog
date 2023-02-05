@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Article } from "../../Interfaces/articleInterface";
-import { ArticlesService } from "../../services/articles.service";
+import { Article } from "../../../Interfaces/articleInterface";
+import { ArticlesService } from "../../../services/articles.service";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
 

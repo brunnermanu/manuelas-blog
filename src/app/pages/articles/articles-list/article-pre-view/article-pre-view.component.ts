@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Article } from "../../../Interfaces/articleInterface";
+import { Article } from "../../../../Interfaces/articleInterface";
 
 @Component({
   selector: 'app-article-pre-view',
