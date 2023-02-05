@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Article } from "../Interfaces/articleInterface";
+import { Observable, of } from "rxjs";
 
 @Injectable()
 export class ArticlesService {
@@ -46,7 +47,7 @@ export class ArticlesService {
     },
   ]
 
-  getArticles() {
-    return this.articles.slice();
+  getArticles$(start: number): Observable<Article[]> {
+    return of(this.articles.slice(start));
   }
 }

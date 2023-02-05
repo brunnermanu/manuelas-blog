@@ -1,9 +1,8 @@
 <div class="articles">
-  <h4 class="articles__title">{{title}}</h4>
+  <h2 class="articles__title">{{title}}</h2>
   <div class="articles__section">
-    <app-article-pre-view *ngFor="let article of articles; let i = index"
+    <app-article-pre-view *ngFor="let article of articles$ | async;"
                           [article]="article"
-                          [index]="i"
                           (click)="onArticleClick(article.id)">
     </app-article-pre-view>
   </div>

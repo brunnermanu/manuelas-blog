@@ -20,3 +20,13 @@
     #{$key}: #{$value}
   }
 }
+
+@function get-border-radius($keys...) {
+  @return map-get($border-radius-map, $keys...);
+}
+
+@mixin border-radius($keys...) {
+  @each $key, $value in get-border-radius($keys...) {
+    #{$key}: #{$value}
+  }
+}

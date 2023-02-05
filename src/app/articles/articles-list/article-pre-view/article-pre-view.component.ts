@@ -10,6 +10,4 @@ import { Article } from "../../../Interfaces/articleInterface";
 
 export class ArticlePreViewComponent {
   @Input() article: Article;
-  @Input() index: number;
-
 }

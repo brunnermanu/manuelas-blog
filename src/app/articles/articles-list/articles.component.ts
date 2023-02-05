@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Article } from "../../Interfaces/articleInterface";
 import { ArticlesService } from "../../services/articles.service";
 import { Router } from "@angular/router";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-articles',
@@ -11,22 +12,20 @@ import { Router } from "@angular/router";
 export class ArticlesComponent implements OnInit {
   @Input() showLatest: boolean;
   @Input() title: string;
-  articles: Article[];
+  articles$: Observable<Article[]>;
 
   constructor(private articlesService: ArticlesService, private router: Router) {
   }
 
   ngOnInit() {
     if (this.showLatest) {
-      this.articles = this.articlesService.getArticles().slice(-3);
+      this.articles$ = this.articlesService.getArticles$(-3);
     } else {
-      this.articles = this.articlesService.getArticles()
+      this.articles$ = this.articlesService.getArticles$(0)
     }
   }
 
   onArticleClick(itemId: number): void {
-    this.router.navigate(['/articles', itemId]).then(a => a);
+    void this.router.navigate(['/articles', itemId]);
   }
-
-
 }
