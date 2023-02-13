@@ -11,11 +11,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	transition: 0.2s ease-in-out;
-	@include border-radius(medium);
+	border-radius: $border-radius-medium;
 
 	&__title-image {
 		width: 250px;
-		@include border-radius(medium);
+		border-radius: $border-radius-medium;
 	}
 
 	&__title {
@@ -23,8 +23,7 @@
 	}
 
 	&:hover {
-		box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
-		cursor: pointer;
+		@include page-styles(card-hover)
 	}
 }
 
