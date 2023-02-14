@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+@import "src/styles/maps";
+@import "src/styles/mixins";
+
+.articles {
+	padding-top: $layout-spacing-large;
+	padding-bottom: $layout-spacing-large;
+	@include page-styles(standard-spaces);
+
+	&__title {
+		@include headings(h2);
+	}
+
+	&__section {
+		padding-top: $layout-spacing-medium;
+		padding-bottom: $layout-spacing-medium;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	@include tablet {
+		@include page-styles(tablet-spaces);
+	}
+}

@@ -2,21 +2,21 @@
 @import "src/styles/variables";
 
 @function get-heading($keys...) {
-  @return map-get($heading-map, $keys...);
+	@return map-get($heading-map, $keys...);
 }
 
 @mixin headings($keys...) {
-  @each $key, $value in get-heading($keys...) {
-    #{$key}: #{$value}
-  }
+	@each $key, $value in get-heading($keys...) {
+		#{$key}: #{$value}
+	}
 }
 
 @function get-page-styles($keys...) {
-  @return map-get($page-map, $keys...);
+	@return map-get($page-map, $keys...);
 }
 
 @mixin page-styles($keys...) {
-  @each $key, $value in get-page-styles($keys...) {
-    #{$key}: #{$value}
-  }
+	@each $key, $value in get-page-styles($keys...) {
+		#{$key}: #{$value}
+	}
 }
