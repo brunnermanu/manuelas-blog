@@ -7,4 +7,5 @@ export interface Article {
   authorName: string;
   authorImage: string;
   timeToRead: string;
+  linkedIn?: string;
 }

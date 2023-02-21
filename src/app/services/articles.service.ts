@@ -13,6 +13,7 @@ export class ArticlesService {
       createdAt: "1.1.2023",
       authorName: "Manuela",
       authorImage: "assets/images/manu-profile-image.png",
+      linkedIn: "https://www.linkedin.com/in/manuelabrunner/",
       timeToRead: "3 Min Read"
     },
     {
@@ -23,7 +24,8 @@ export class ArticlesService {
       createdAt: "2.1.2023",
       authorName: "Manuela",
       authorImage: "assets/images/manu-profile-image.png",
-      timeToRead: "5 Min Read"
+      timeToRead: "5 Min Read",
+      linkedIn: "https://www.linkedin.com/in/manuelabrunner/"
     },
     {
       id: 3,
@@ -33,7 +35,8 @@ export class ArticlesService {
       createdAt: "1.1.2023",
       authorName: "Manuela",
       authorImage: "assets/images/manu-profile-image.png",
-      timeToRead: "3 Min Read"
+      timeToRead: "3 Min Read",
+      linkedIn: "https://www.linkedin.com/in/manuelabrunner/"
     },
     {
       id: 4,
@@ -53,7 +56,8 @@ export class ArticlesService {
       createdAt: "2.1.2023",
       authorName: "Manuela",
       authorImage: "assets/images/manu-profile-image.png",
-      timeToRead: "5 Min Read"
+      timeToRead: "5 Min Read",
+      linkedIn: "https://www.linkedin.com/in/manuelabrunner/"
     },
   ]
 

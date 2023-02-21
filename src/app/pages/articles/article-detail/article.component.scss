@@ -1,0 +1,70 @@
+@import "src/styles/variables";
+@import "src/styles/maps";
+@import "src/styles/mixins";
+
+.article {
+	padding-top: $layout-spacing-large;
+	padding-bottom: $layout-spacing-large;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	@include page-styles(standard-spaces);
+
+	&__title-image {
+		max-width: 900px;
+		margin-top: $layout-spacing-large;
+		margin-bottom: $layout-spacing-medium;
+	}
+
+	&__title {
+		margin: 0;
+		max-width: 900px;
+		@include headings(h1);
+	}
+
+	&__author {
+		width: 100%;
+		max-width: 700px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: $layout-spacing-small;
+		border-top: 1px solid $dark;
+	}
+
+	&__content {
+		margin-top: 60px;
+		max-width: 700px;
+		white-space: pre-wrap;
+		@include headings(p2);
+	}
+
+	@include tablet {
+		@include page-styles(tablet-spaces);
+		&__title-image {
+			max-width: 700px;
+		}
+		&__title {
+			width: auto;
+			@include headings(h2);
+		}
+		&__content {
+			max-width: 600px;
+			@include headings(p2);
+		}
+	}
+	@include mobile {
+		@include page-styles(mobile-spaces);
+		&__title-image {
+			width: 100%;
+		}
+		&__title {
+			width: auto;
+			@include headings(h2);
+		}
+		&__content {
+			width: 100%;
+			@include headings(p2);
+		}
+	}
+}

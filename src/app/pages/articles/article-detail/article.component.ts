@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ArticlesService } from "../../services/articles.service";
-import { Article } from "../../Interfaces/articleInterface";
+import { ArticlesService } from "../../../services/articles.service";
+import { Article } from "../../../Interfaces/articleInterface";
 import { ActivatedRoute, Params } from "@angular/router";
 
 @Component({
