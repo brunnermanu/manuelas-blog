@@ -2,7 +2,7 @@
      [routerLink]="['article', article.id]"
      (click)="onArticleClick(article.id)"
 >
-  <img class="articlePreView__title-image" src="{{article.titleImage}}" alt="title-image">
-  <div class="articlePreView__title">{{article.title}}</div>
+  <img class="articlePreView__title-image" src="{{ article.titleImage }}" alt="title-image">
+  <div class="articlePreView__title">{{ article.title }}</div>
   <app-author [article]="article"></app-author>
 </div>

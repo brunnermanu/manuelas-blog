@@ -12,16 +12,15 @@ export class ArticleComponent implements OnInit {
   article: Article | undefined;
   id: number;
 
-  constructor(private articlesService: ArticlesService, private route: ActivatedRoute,) {
-  }
+  constructor(private articlesService: ArticlesService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.params
-        .subscribe(
-            (params: Params) => {
-              this.id = +params['id'];
-              this.article = this.articlesService.getArticle(this.id);
-            }
-        );
+      .subscribe(
+        (params: Params) => {
+          this.id = +params['id'];
+          this.article = this.articlesService.getArticle(this.id);
+        }
+      );
   }
 }

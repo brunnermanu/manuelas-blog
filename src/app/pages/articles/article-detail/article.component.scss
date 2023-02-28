@@ -41,8 +41,10 @@
 
 	@include tablet {
 		@include page-styles(tablet-spaces);
+
 		&__title-image {
 			max-width: 700px;
+			margin-top: $layout-spacing-large;
 		}
 		&__title {
 			width: auto;
@@ -53,10 +55,14 @@
 			@include headings(p2);
 		}
 	}
+
 	@include mobile {
 		@include page-styles(mobile-spaces);
+		margin-top: $layout-spacing-medium;
+		
 		&__title-image {
 			width: 100%;
+			margin-top: $layout-spacing-medium;
 		}
 		&__title {
 			width: auto;

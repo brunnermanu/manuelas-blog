@@ -1,5 +1,5 @@
 <div class="articles">
-  <h4 class="articles__title">{{title}}</h4>
+  <h4 class="articles__title">{{ title }}</h4>
   <div class="articles__section">
     <app-article-pre-view *ngFor="let article of articles$ | async;"
                           [article]="article"

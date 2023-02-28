@@ -9,11 +9,4 @@ import { Observable } from "rxjs";
 })
 export class HomeComponent {
   articles: Observable<Article[]>
-  //
-  // constructor(private articlesService: ArticlesService, private router: Router) {
-  // }
-  //
-  // ngOnInit() {
-  //   this.articles = this.articlesService.getArticles$()
-  // }
 }

@@ -14,8 +14,7 @@ export class ArticlesComponent implements OnInit {
   @Input() title: string;
   articles$: Observable<Article[]>;
 
-  constructor(private articlesService: ArticlesService, private router: Router) {
-  }
+  constructor(private articlesService: ArticlesService, private router: Router) {}
 
   ngOnInit() {
     if (this.showLatest) {

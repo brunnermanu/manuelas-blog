@@ -12,9 +12,7 @@ import { Article } from "../../../../Interfaces/articleInterface";
 export class ArticlePreViewComponent {
   @Input() article: Article;
 
-  constructor(private router: Router) {
-  }
-
+  constructor(private router: Router) {}
 
   onArticleClick(id: number): void {
     this.router.navigate(['article', id]).then(r => r);
