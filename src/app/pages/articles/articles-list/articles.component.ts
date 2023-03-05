@@ -25,6 +25,6 @@ export class ArticlesComponent implements OnInit {
   }
 
   onArticleClick(itemId: number): void {
-    void this.router.navigate(['/articles', itemId], { fragment: 'articleStart' });
+    void this.router.navigate(['/articles', itemId]);
   }
 }
