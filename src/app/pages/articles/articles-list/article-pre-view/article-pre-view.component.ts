@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from "@angular/router";
 import { Article } from "../../../../Interfaces/articleInterface";
 
 @Component({
@@ -10,4 +11,10 @@ import { Article } from "../../../../Interfaces/articleInterface";
 
 export class ArticlePreViewComponent {
   @Input() article: Article;
+
+  constructor(private router: Router) {}
+
+  onArticleClick(id: number): void {
+    void this.router.navigate(['articles', id]);
+  }
 }

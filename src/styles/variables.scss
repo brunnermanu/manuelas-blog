@@ -112,10 +112,16 @@ $page-map: (
 		padding-right: $layout-spacing-large,
 	),
 	tablet-spaces: (
-		padding: $layout-spacing-medium,
+		padding-top: $layout-spacing-large,
+		padding-left: $layout-spacing-medium,
+		padding-right: $layout-spacing-medium,
+		padding-bottom: $layout-spacing-medium,
 	),
 	mobile-spaces: (
-		padding: $layout-spacing-small,
+		padding-top: $layout-spacing-medium,
+		padding-left: $layout-spacing-small,
+		padding-right: $layout-spacing-small,
+		padding-bottom: $layout-spacing-small,
 	),
 	standard-button: (
 		border: none,

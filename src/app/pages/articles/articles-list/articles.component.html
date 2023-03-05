@@ -1,5 +1,11 @@
 <div class="articles">
-  <h2 class="articles__title">{{title}}</h2>
+  <div class="articles__title-section" *ngIf="showLatest">
+    <h4 class="articles__title">{{ title }}</h4>
+    <a class="articles__link" routerLink="/articles">
+      <p>See all Articles</p>
+      <img src="assets/icons/chevron-right.svg" alt="Pfeil-Rechts">
+    </a>
+  </div>
   <div class="articles__section">
     <app-article-pre-view *ngFor="let article of articles$ | async;"
                           [article]="article"
