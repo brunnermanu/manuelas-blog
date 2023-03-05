@@ -7,8 +7,22 @@
 	padding-bottom: $layout-spacing-large;
 	@include page-styles(standard-spaces);
 
+	&__title-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	&__title {
 		@include headings(h2);
+	}
+
+	&__link {
+		@include headings(h3);
+		text-decoration: none;
+		display: flex;
+		align-items: baseline;
+		gap: 10px;
 	}
 
 	&__section {

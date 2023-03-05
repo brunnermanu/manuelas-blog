@@ -7,14 +7,14 @@ import { ArticleComponent } from "./pages/articles/article-detail/article.compon
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'article', component: ArticlesComponent },
-  { path: 'article/:id', component: ArticleComponent },
+  { path: 'articles', component: ArticlesComponent },
+  { path: 'articles/:id', component: ArticleComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

@@ -15,6 +15,6 @@ export class ArticlePreViewComponent {
   constructor(private router: Router) {}
 
   onArticleClick(id: number): void {
-    this.router.navigate(['article', id]).then(r => r);
+    void this.router.navigate(['articles', id]);
   }
 }

@@ -12,6 +12,7 @@
 
 	&__title-image {
 		max-width: 900px;
+		border-radius: $border-radius-medium;
 		margin-top: $layout-spacing-large;
 		margin-bottom: $layout-spacing-medium;
 	}
@@ -59,7 +60,7 @@
 	@include mobile {
 		@include page-styles(mobile-spaces);
 		margin-top: $layout-spacing-medium;
-		
+
 		&__title-image {
 			width: 100%;
 			margin-top: $layout-spacing-medium;

@@ -8,5 +8,4 @@ import { Article } from "../../../Interfaces/articleInterface";
 })
 export class AuthorComponent {
   @Input() article: Article | undefined;
-
 }
